@@ -20,7 +20,7 @@
     - ssh
   authorized_key:
     user: "{{ git_user }}"
-    key: "{{ ssh_authorized_keys }}"
+    key: "{{ git_authorized_keys }}"
     exclusive: yes
 
 - name: git server | repos
