@@ -1,4 +1,5 @@
 ---
 git_user: git
-git_repos: "https://github.com/seanho00/ansible"
+git_repos: 
+  - "https://github.com/seanho00/ansible"
 git_authorized_keys: ""
