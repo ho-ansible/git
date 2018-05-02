@@ -4,9 +4,7 @@
   tags:
     - package
   package:
-    name: "{{ item }}"
-  with_items:
-  - git
+    name: git
 
 - name: git server | git user
   tags:
