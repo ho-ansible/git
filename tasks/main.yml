@@ -28,7 +28,7 @@
     repo: "{{ item }}"
     dest: "/home/{{ git_user }}/{{ item | basename }}"
     bare: yes
-  with_items: "{{ git_repos }}"
+  loop: "{{ q('list', git_repos) }}"
 
 - name: git server | permissions
   file:
